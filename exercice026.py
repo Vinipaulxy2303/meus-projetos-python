@@ -1,0 +1,5 @@
+frase=str(input('Me de uma frase:'))
+quan=frase.count('a')
+p=frase.find('a')
+u=frase.rfind('a')
+print('a frase que vc me deu tem {} "a" \n O primerio "a" está no {} caractere \n E o ultimo "a" em {}'.format(quan, p, u))
