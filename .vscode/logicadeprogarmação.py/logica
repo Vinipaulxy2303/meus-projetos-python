@@ -1,0 +1,19 @@
+nome=str(input('Qual seu nome?'))
+lavar=str(input('Você já lavou a casa?'))
+if lavar=='sim':
+    print('Você pode sair ')
+else:
+    print('Você ainda não pode sair porque não lavou a lousa')
+while True:
+    resposta=str(input('Ja lavou a casa?'))
+    if resposta =='sim':
+        print('Você pode sair')
+        break
+    else: 
+        print('Você ja lavou a lousa?')
+C=int(input('Digiyte um numero:'))
+for C in range(C,11):
+    print(C)
+num=int(input('Me de um numero:'))
+for i in range(1,11,2):
+    print(i)

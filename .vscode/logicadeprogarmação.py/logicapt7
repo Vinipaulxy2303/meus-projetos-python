@@ -1,0 +1,4 @@
+def soma():
+    a=int(input('digite um numero: '))
+    b=int(input('Me de mais um numero: '))
+   so=a+b

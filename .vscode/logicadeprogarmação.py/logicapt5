@@ -1,0 +1,9 @@
+n1=int(input('Me de um numero: '))
+n2=int(input('Me de outro numero: '))
+n3=int(input('Me de mais um numero:'))
+n4=int(input('Me de só mais um numero: '))
+print('As soma dos numeros é: {}\n E a media entre eles é: {}'.format(n1+n2+n3+n4, (n1+n2+n3+n4)/4))
+print('Quanto dos numeros são divisiveis por 5: {}'.format((n1%5==0) + (n2%5==0) + (n3%5==0) + (n4%5==0)))
+print('Numeros nulos:{}'.format((n1==0) + (n2==0) + (n3==0) + (n4==0)))
+np=(n1%2==0)*n1 + (n2%2==0)*n2 + (n3%2==0)*n3 + (n4%2==0)*n4
+print('A soma dos valores pares:{}'.format(np))

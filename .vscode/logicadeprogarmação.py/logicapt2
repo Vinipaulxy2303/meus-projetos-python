@@ -1,0 +1,11 @@
+tot01=0
+simp=0
+C=int(input('Digite um numero:'))
+for C in range(6):
+      v=int(input('Digite um valor: '))
+if (v >= 0) and (v <= 10):
+        tot01+= 1
+        if v % 2 ==1:
+               simp+= v
+print('Ao todo foram {} valores digitados entre 0 e 10'.format(tot01))
+print('nesse intervalo a soma dos numeros impares foi {}'.format(simp))

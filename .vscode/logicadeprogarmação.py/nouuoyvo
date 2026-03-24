@@ -1,0 +1,15 @@
+nome_de_usuario=str(input('Qual o nome do seu perfil? '))
+senha_de_usuario=int(input('Qual vai ser a senha? '))
+nome_tenta=""
+senha_tenta=""
+while nome_de_usuario!=nome_tenta and senha_de_usuario!=senha_tenta:
+    nome_tenta=str(input('Qual é o nome da conta? '))
+    senha_tenta=int(input('Qual é a senha da conta? '))
+    if nome_tenta==nome_de_usuario and senha_tenta==senha_de_usuario:
+        print('Olá de novo {}'.format(nome_de_usuario))
+    elif nome_tenta!=nome_de_usuario and senha_tenta!=senha_de_usuario:
+        print('As credencias estão incorretas')
+    elif nome_tenta!=nome_tenta and senha_tenta==senha_de_usuario:
+        print('As credencias estão incorretas')
+    else:
+        print('As credencias estão incorretas')

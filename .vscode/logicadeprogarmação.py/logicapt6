@@ -1,0 +1,20 @@
+def pessoa1(nome, peso):
+    print('-'*30)
+    nome1=str(input("Qual seu nome? "))
+    peso1=float(input('Qual é o seu peso? '))
+    print('-'*30)
+    return (nome, peso)
+def pessoa2(nome, peso):
+    print('-'*30)
+    nome2=str(input('Qual seu nome? '))
+    peso3=float(input('Qual é o seu peso? '))
+    print('-'*30)
+    return (nome, peso)
+pessoa1()
+pessoa2()
+nome1, peso1=pessoa1()
+nome2, peso2=pessoa2()
+if peso1 > peso2:
+    print('O maior peso e do {} que pesa {} kg'.format(nome1, peso1))
+else:
+    print('O maior peso é o do {} com {} kg'.format(nome2, peso2))

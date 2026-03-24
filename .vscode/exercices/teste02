@@ -1,0 +1,54 @@
+sim=1
+não=0
+depositar=2
+sacar=3
+transfeir=4
+sair=4
+def motor():
+    nome=input('Qual seu nome? ')
+    conta=int(input('Você já tem conta nó nosso banco? '))
+    if conta==sim:
+        print('bem vindo de volta {} , vamos aceesr a sua conta!!'.format(nome))
+        email=input('Qual o seu email?')
+        senha=input('Qual a sua senha? ')
+        print('Carrengando as informações da su conta.......\n Ola {} oque vc deseja fazer hoje?'.format(nome))
+    else:
+        criando=input('Você gostaria de criar uma conta no nosso banco?')
+        if criando==sim:
+            print('Que bom!!!\n Você está criando uma conta em um dos emlhores bancos da america latina!!')
+            nome_criando=input('Qual seu nome? ')
+            email_criando=input('Qual seu email? ')
+            senha_criando=input('Qual vai ser a senha da sua conta? ')
+            corfima=input('Repita a sua senha :')
+            if senha_criando==corfima:
+                print('Sua conta já vai ser criada\n aguarde um momento.......\n parabéns {}, e obrigado por confiar no nosso banco'.format(nome_criando))
+            else:
+                print('As senhas não condisem!!!')
+                while senha_criando!=corfima:
+                    senha_criando=input('Qual vai ser a senha da sua conta?')
+                    corfima=input('Repita a senha :')
+                    return(nome, email, senha, nome_criando, email_criando, senha_criando)
+print('\033[35mBEM VINDO AO BANCO DO FUTURO!!! \033[m')
+motor()
+print('Oque você deseja fazer hoje? ')
+print('\033[34m 1- Depositae      2- Sacar   \n 3- Transferir     4- Sair \033[m')
+opcão=int(input('Qual opção você fazer hoje?'))
+if opcão==depositar:
+    print('Quantos R$ você deseja depositar? ')
+    valor_deposito=float(input('Qual o valor do deposito? '))
+    print('Para efetuar o deposito de R$ {} \n copie o codigo pix: \n 00020126580014BR.GOV.BCB.PIX0136a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r5204000053039865802BR5925NOME ALEATORIO TESTE6009SAO PAULO62070503***6304ABCD')
+elif opcão==sacar:
+    print('Quantos R$ Você deseja sacar? ')
+    valor_saque=float(input('Qual o valor do saque? '))
+    print('Para efetuar o saque aperte sonfirmar :')
+    aceitar=input('corfirme o efetuamento do saque:')
+    print('Carregando.................\n Saque efetuado com sucesso!')
+elif opcão==transfeir:
+    print('Quantos R$ Você deseja trnsferir? ')
+    valor_transferencia=float(input('Qual o valor da transferencia? '))
+    pix=input('Para quem você deseja mandr o dinheiro? ')
+    print('Para efetuar a transferencia aperte confirmar :')
+    aceitar=input('Confirma o efetuamneto da transferencia:')
+    print('Carregando as informações das contas.................\n transferencia efetuada com sucesso!')
+else:
+    print('Obrigado por acessar nosso banco, volte sempre!!!') 
