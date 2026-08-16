@@ -1,1 +1,3 @@
-
+def listagem():
+    alphabet='abcdefghijklmnopqrstuvwxyz'
+    
